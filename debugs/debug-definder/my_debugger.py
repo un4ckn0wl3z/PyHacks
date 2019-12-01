@@ -68,7 +68,7 @@ class debugger:
     def run(self):
         # Now we have to poll the debuggee for
         # debugging events
-        while self.debugger_active == True:
+        while self.debugger_active:
             self.get_debug_event()
 
     def get_debug_event(self):
